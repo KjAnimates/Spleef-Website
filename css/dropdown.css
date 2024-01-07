@@ -16,13 +16,13 @@
     margin-bottom: none;
 }
 
-.dropdown:focus .content {
+.dropdown:focus-within .content {
     display: block;
 }
-.dropdown:focus .header::before {
+.dropdown:focus-within .header::before {
     rotate: 180deg;
 }
-.dropdown:focus .header {
+.dropdown:focus-within .header {
     text-decoration: underline;
 }
 

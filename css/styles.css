@@ -53,6 +53,11 @@ kbd {
     padding: 0.25em;
 }
 
+.icon {
+    text-decoration: none;
+    color: var(--white);
+}
+
 .subtitle {
     color: grey;
 }
@@ -69,4 +74,27 @@ kbd {
 
 .center-text {
     text-align: center;
+}
+
+.button {
+    --style: cubic-bezier(0.075, 0.82, 0.165, 1);
+    --anim-color: var(--white);
+
+    padding: 1em;
+    background: #0d141c;
+    color: var(--white);
+    border: 1.8pt solid var(--white);
+    border-radius: .5em;
+    display: inline-block;
+    transition: transform 400ms var(--style), color 400ms var(--style);
+}
+.button.small {
+    padding: .75em;
+}
+.button:hover, .button:focus {
+    transform: scale(1.25) rotate(5deg);
+}
+
+#youtube {
+    --anim-color: red;
 }
