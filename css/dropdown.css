@@ -1,0 +1,31 @@
+.dropdown {
+    background-color: var(--dark-slate);
+    padding: 1em;
+    border-radius: 0.5em;
+    border: 1.8pt solid white;
+}
+
+.dropdown .header::before {
+    content: "▼";
+    margin: 0 0.5em;
+    display: inline-block;
+    transition: rotate 400ms ease-out;
+}
+.dropdown .content {
+    margin: 0.5em;
+    margin-bottom: none;
+}
+
+.dropdown:focus .content {
+    display: block;
+}
+.dropdown:focus .header::before {
+    rotate: 180deg;
+}
+.dropdown:focus .header {
+    text-decoration: underline;
+}
+
+.dropdown .content {
+    display: none;
+}
