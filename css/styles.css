@@ -41,6 +41,11 @@ html, body {
     font-weight: 600;
 }
 
+.image {
+    display: block;
+    width: clamp(300px, 50%, 600px);
+}
+
 kbd {
     background: var(--dark-slate);
     border: 1.8pt solid white;
