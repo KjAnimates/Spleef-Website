@@ -10,9 +10,23 @@
 }
 
 html, body {
-    background-color: var(--black);
     color: var(--white);
     font-family: 'Roboto';
+    box-sizing: border-box;
+}
+
+#background {
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://tr.rbxcdn.com/0c72ebc1c97e824119d0eef865165adb/768/432/Image/Png);
+    background-repeat: repeat-y;
+    background-size: 100%;
+    filter: brightness(25%) blur(10px);
 }
 
 .header {
